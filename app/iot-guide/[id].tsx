@@ -63,7 +63,7 @@ export default function IoTGuideScreen() {
   }
 
   const channel: Channel | undefined = channelQuery.data;
-  const apiUrl = 'https://iot-gateway-api-service.onrender.com'; // User needs to replace this
+  const apiUrl = 'http://localhost:8080'; // User needs to replace this
 
   // Generate sample data
   const sampleData = channel?.allowed_fields.reduce((acc, field) => {
